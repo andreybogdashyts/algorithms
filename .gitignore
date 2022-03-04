@@ -1,3 +1,6 @@
-SparseArrays/bin/*
-SparseArrays/obj/*
-SparseArrays/.vs/*
+arrays.sparseArrays/bin/*
+arrays.sparseArrays/obj/*
+arrays.sparseArrays/.vs/*
+arrays.leftRotation/bin/*
+arrays.leftRotation/obj/*
+arrays.leftRotation/.vs/*
