@@ -5,7 +5,9 @@ VisualStudioVersion = 17.1.32210.238
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sparseArrays", "arrays\sparseArrays\sparseArrays.csproj", "{762682F3-232C-4DAA-A40F-B193AC5AD2BD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "leftRotation", "arrays\leftRotation\leftRotation.csproj", "{A038BBC9-DD4C-4037-B425-86210968B81F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "leftRotation", "arrays\leftRotation\leftRotation.csproj", "{A038BBC9-DD4C-4037-B425-86210968B81F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "arrays", "arrays", "{C1013532-15E3-4C22-A126-CAECB1B18E96}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,6 +26,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{762682F3-232C-4DAA-A40F-B193AC5AD2BD} = {C1013532-15E3-4C22-A126-CAECB1B18E96}
+		{A038BBC9-DD4C-4037-B425-86210968B81F} = {C1013532-15E3-4C22-A126-CAECB1B18E96}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9E0561EF-FE27-4F50-844F-5DCF8211FF09}
