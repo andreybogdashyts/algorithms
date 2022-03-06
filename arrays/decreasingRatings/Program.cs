@@ -23,29 +23,36 @@ class Result
      * The function is expected to return a LONG_INTEGER.
      * The function accepts INTEGER_ARRAY ratings as parameter.
      */
+    /*
+4
+100
+3
+2
+1
+15
+      */
 
     public static long countDecreasingRatings(List<int> ratings)
     {
-        long result = ratings.Count;
-        result += count(ratings.ToArray());
-        return result;
-    }
+        long r = 0;
 
-    public static long count(int[] ratings)
-    {
-        long counter = 0;
-        for (var i = 0; i < ratings.Length - 1; i++)
+        for (int i = 0; i < ratings.Count; i++)
         {
-            if (ratings[i] == ratings[i + 1] + 1)
+            var l = ratings[i];
+            for (int j = i + 1; j < ratings.Count; j++)
             {
-                counter++;
-            }
-            else
-            {
-                counter += count(ratings.Skip(i + 1).ToArray());
+                if (l > ratings[j])
+                {
+                    r++;
+                    l = ratings[j];
+                }
+                else
+                {
+                    break;
+                }
             }
         }
-        return counter;
+        return r;
     }
 }
 

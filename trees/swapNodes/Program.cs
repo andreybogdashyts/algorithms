@@ -24,33 +24,34 @@ class Result
 
     private static Node GenerateTree(List<List<int>> indexes, int v, int depth)
     {
-        if (indexes.Count == 0)
-        {
-            return null;
-        }
-        var ixxxl = new List<List<int>>();
-        var ixxxl = new List<List<int>>();
-        var idx = indexes.First();
-        if (idx[0] > 0)
-        {
-            ixxx = indexes.Skip(1).ToList();
-        }
-        if (idx[0] > 0)
-        {
-            ixxx = indexes.Skip(1).ToList();
-        }
-        var idxs2 = indexes.Skip(2).ToList();
-        var n = new Node { Data = v, K = depth };
-        if (idx[0] > 0)
-        {     
-            n.Left = GenerateTree(idxs1, idx[0], depth + 1);
-        }
-        if (idx[1] > 0)
-        {
-            
-            n.Right = GenerateTree(idxs2, idx[1], depth + 1);
-        }
-        return n;
+        //if (indexes.Count == 0)
+        //{
+        //    return null;
+        //}
+        //var ixxxl = new List<List<int>>();
+        //var ixxxl = new List<List<int>>();
+        //var idx = indexes.First();
+        //if (idx[0] > 0)
+        //{
+        //    ixxx = indexes.Skip(1).ToList();
+        //}
+        //if (idx[0] > 0)
+        //{
+        //    ixxx = indexes.Skip(1).ToList();
+        //}
+        //var idxs2 = indexes.Skip(2).ToList();
+        //var n = new Node { Data = v, K = depth };
+        //if (idx[0] > 0)
+        //{     
+        //    n.Left = GenerateTree(idxs1, idx[0], depth + 1);
+        //}
+        //if (idx[1] > 0)
+        //{
+
+        //    n.Right = GenerateTree(idxs2, idx[1], depth + 1);
+        //}
+        //return n;
+        return null;
     }
 
     /*
