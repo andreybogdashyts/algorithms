@@ -10,4 +10,13 @@ arrays/oddNumbers/.vs/*
 arrays/findNumber/bin/*
 arrays/findNumber/obj/*
 arrays/findNumber/.vs/*
+arrays/swapNodes/bin/*
+arrays/swapNodes/obj/*
+arrays/swapNodes/.vs/*
+arrays/decreasingRatings/bin/*
+arrays/decreasingRatings/obj/*
+arrays/decreasingRatings/.vs/*
+trees/swapNodes/bin/*
+trees/swapNodes/obj/*
+trees/swapNodes/.vs/*
 .vs/*
