@@ -21,9 +21,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "decreasingRatings", "arrays
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "vanhak", "vanhak", "{FD541B96-1B61-41B2-8F31-5F840641A80B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MorseCode", "vanhak\MorseCode\MorseCode.csproj", "{FC98E12B-EACC-4732-BD36-EDEE3F68F171}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "morseCode", "vanhak\morseCode\morseCode.csproj", "{FC98E12B-EACC-4732-BD36-EDEE3F68F171}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SortColumnsOfCsvFile", "vanhak\SortColumnsOfCsvFile\SortColumnsOfCsvFile.csproj", "{400552C4-1361-45DC-99A0-9EEA5462258D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sortColumnsOfCsvFile", "vanhak\sortColumnsOfCsvFile\sortColumnsOfCsvFile.csproj", "{400552C4-1361-45DC-99A0-9EEA5462258D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
