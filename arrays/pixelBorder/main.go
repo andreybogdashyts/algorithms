@@ -7,10 +7,12 @@ import (
 func main() {
 
 	m := [][]int{
-		{1, 0, 0, 1, 0, 0, 1},
-		{1, 0, 1, 0, 0, 1, 0},
-		{0, 1, 0, 1, 1, 0, 1},
-		{1, 0, 0, 0, 0, 1, 0},
+		{1, 0, 0, 0, 0, 0},
+		{0, 1, 0, 1, 1, 1},
+		{0, 0, 1, 0, 1, 0},
+		{1, 1, 0, 0, 1, 0},
+		{1, 0, 1, 1, 0, 0},
+		{1, 0, 0, 0, 0, 1},
 	}
 	fmt.Println("Before", m)
 	r := calc(m)
@@ -26,15 +28,15 @@ func calc(matrix [][]int) [][]int {
 	for i := 0; i < len(matrix); i++ {
 		for j := 0; j < len(matrix[i]); j++ {
 			count := 0
-			count += getCountPixels(matrix[i][j], -1, -1, matrix)
-			count += getCountPixels(matrix[i][j], -1, 0, matrix)
-			count += getCountPixels(matrix[i][j], -1, 1, matrix)
-			count += getCountPixels(matrix[i][j], 0, 1, matrix)
-			count += getCountPixels(matrix[i][j], 1, 1, matrix)
-			count += getCountPixels(matrix[i][j], 1, 0, matrix)
-			count += getCountPixels(matrix[i][j], 1, -1, matrix)
-			count += getCountPixels(matrix[i][j], 0, -1, matrix)
-			if count > 2 {
+			count += getCountPixels(i, j, -1, -1, matrix)
+			count += getCountPixels(i, j, -1, 0, matrix)
+			count += getCountPixels(i, j, -1, 1, matrix)
+			count += getCountPixels(i, j, 0, 1, matrix)
+			count += getCountPixels(i, j, 1, 1, matrix)
+			count += getCountPixels(i, j, 1, 0, matrix)
+			count += getCountPixels(i, j, 1, -1, matrix)
+			count += getCountPixels(i, j, 0, -1, matrix)
+			if count > 1 {
 				r[i][j] = 0
 			}
 		}
@@ -42,10 +44,10 @@ func calc(matrix [][]int) [][]int {
 	return r
 }
 
-func getCountPixels(pi int, x int, y int, matrix [][]int) int {
-	xv := pi + x
-	yv := pi + y
-	if xv < 0 || yv < 0 {
+func getCountPixels(i int, j int, x int, y int, matrix [][]int) int {
+	xv := i + x
+	yv := j + y
+	if xv <= 0 || yv <= 0 || xv >= len(matrix)-1 || yv >= len(matrix[0])-1 {
 		return 0
 	}
 	return matrix[xv][yv]
