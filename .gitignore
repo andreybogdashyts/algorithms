@@ -4,3 +4,6 @@
 */cmd/*.exe
 .vs/*
 
+vanhak/react-hightlighter/node_modules/*
+vanhak/react-hightlighter/build/*
+vanhak/react-notification/node_modules/*
